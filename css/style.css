@@ -1,0 +1,219 @@
+/* 全域 */
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Sevillana&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    font-family: "Gabarito", "Nunito Sans";
+
+}
+
+#banner {
+    padding: 60px 0;
+    width: 100%;
+    height: 500px;
+    background: url('../img/images/phone/Banner.png') no-repeat;
+    background-size: auto 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 70%);
+    border-radius: 30px;
+}
+
+.hero-title {
+    font-size: 40px;
+}
+
+.desc {
+    size: 1rem;
+    line-height: 1.2;
+    margin: 30px auto;
+}
+
+.btn {
+    background-color: #292F36;
+    font-size: 18px;
+    padding: 1.25rem 1.875rem;
+    border-radius: 18px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    /* margin-top: 10px; */
+}
+
+.btn i {
+    font-size: 20px;
+    color: #CDA274;
+    margin-left: .3125rem;
+}
+
+/* ===========article&news========= */
+#services {
+    padding-top: 80px;
+}
+
+.title-group {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title2 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.sub-title {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin: auto;
+    line-height: 1.5;
+}
+
+/* =========article card========= */
+.article-card {
+    width: 100%;
+    padding: 24px;
+    border-radius: 60px;
+    border: 1px solid rgb(218, 217, 217);
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in;
+}
+
+.pic-frame {
+    width: 100%;
+    height: 270px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.pic {
+    width: 100%;
+}
+
+.article-title {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-family: "Nunito Sans";
+}
+
+.link-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.read {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: #292F36;
+    background-color: #CDA274;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.tag {
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    left: 10px;
+    bottom: 10px;
+}
+
+/* 平板 */
+@media screen and (min-width:481px) {
+    #banner {
+        height: 600px;
+        background: url('../img/images/tablet/Banner.png') no-repeat;
+        background-size: 100% auto;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #banner .container {
+        width: 40%;
+        margin-left: 60px;
+        background-color: transparent;
+        border-radius: 30px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .article-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .article-card {
+        width: 48%;
+    }
+
+    .sub-title {
+        width: 60%;
+    }
+}
+
+/* 電腦 */
+@media screen and (min-width:835px) {
+    #banner {
+        height: 800px;
+        background: url('../img/images/Banner.jpg') no-repeat;
+        background-size: cover;
+        padding: 66px 100px;
+        border-bottom-left-radius: 360px;
+    }
+
+    #banner .container {
+        width: 45%;
+    }
+
+    .hero-title {
+        font-size: 64px;
+    }
+
+    .article-card:hover {
+        background-color: #e7e7e7;
+    }
+
+    .read:hover {
+        background-color: #c6c6c6;
+    }
+
+    .article-card {
+        width: 32%;
+    }
+}
